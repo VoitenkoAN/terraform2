@@ -1,0 +1,10 @@
+[for_each-vm]
+netology-develop-db-01   ansible_host=158.160.102.93
+netology-develop-db-02   ansible_host=51.250.86.173
+
+[count-vm]
+develop-platform-web-1   ansible_host=158.160.117.190
+develop-platform-web-2   ansible_host=158.160.119.50
+
+[count-disk-vm]
+netology-develop-platform-disk   ansible_host=158.160.118.85 
