@@ -30,6 +30,7 @@ resource "yandex_compute_instance" "wm-disk" {
   network_interface {
     subnet_id = yandex_vpc_subnet.develop.id
     nat       = var.vm_web_platform_network_interface_nat
+    security_group_ids = [yandex_vpc_security_group.example.id]
   }
 
   metadata = {
